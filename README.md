@@ -8,6 +8,11 @@ In order to do this demo, we assume that:
 2) The Windows Machine Config Operator has already been installed via Operator Hub
 ```
 
+## Table of Contents
+Demo #1 - To scale machines for OCP cluster 
+Demo #2 - To build simple Windows Web Server on OCP
+
+
 ## Demo #1 - To scale machines for OCP cluster
 In this demo, we will increase the replica count of our Windows machineset from 1 to 2.
 
