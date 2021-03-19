@@ -8,7 +8,7 @@ Demo #2 - To build simple Windows Web Server on OCP
 Resources for OCP and Windows Containers
 ```
 
-## Pre-requisites:
+## Pre-requisites
 In order to do this demo, we assume that:
 ```
 1) Running OCP 4.6+
