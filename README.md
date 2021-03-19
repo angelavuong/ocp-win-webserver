@@ -1,17 +1,18 @@
 # Openshift 4: Windows Containers
 
+## Table of Contents
+```
+Pre-requisites
+Demo #1 - To scale machines for OCP cluster 
+Demo #2 - To build simple Windows Web Server on OCP
+```
+
 ## Pre-requisites:
 In order to do this demo, we assume that:
 ```
 1) Running OCP 4.6+
 1) Appropriate networking has been configured for OCP to support Windows Containers (OVN Hybrid)
 2) The Windows Machine Config Operator has already been installed via Operator Hub
-```
-
-## Table of Contents
-```
-Demo #1 - To scale machines for OCP cluster 
-Demo #2 - To build simple Windows Web Server on OCP
 ```
 
 ## Demo #1 - To scale machines for OCP cluster
