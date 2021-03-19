@@ -2,9 +2,11 @@
 
 ## Pre-requisites:
 In order to do this demo, we assume that:
-1) Running OCP 
+```
+1) Running OCP 4.6+
 1) Appropriate networking has been configured for OCP to support Windows Containers (OVN Hybrid)
 2) The Windows Machine Config Operator has already been installed via Operator Hub
+```
 
 ## Demo #1 - To scale machines for OCP cluster
 In this demo, we will increase the replica count of our Windows machineset from 1 to 2.
