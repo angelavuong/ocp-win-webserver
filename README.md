@@ -36,3 +36,33 @@ $ oc get nodes -o wide
 ## Demo #2 - To build simple Windows Web Server on OCP
 In this demo, we will deploy a simple Windows Web Server on Openshift.
 
+### To access the Windows node: 
+Locate the Windows node: 
+```
+$ oc get nodes -o wide 
+```
+
+SSH into the Windows Machine Config Operator to access the Windows node: 
+```
+$ oc get pods -n openshift-windows-machine-config-operator
+$ oc rsh -n openshift-windows-machine-config-operator winc-ssh-XXXXX
+sh-4.4$
+```
+
+Using sshcmd.sh to login to the Windows node: 
+```
+$ sshcmd.sh <name-of-windows-node>
+PS C:\Users\Administrator>
+```
+
+Install the Windows Server 2019 image via docker: 
+```
+> docker images
+> docker pull mcr.microsoft.com/windows/servercore:ltsc2019
+> docker images
+> exit
+> $ exit
+```
+
+### Build Windows Server 2019 container using OCP
+
