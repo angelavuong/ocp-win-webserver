@@ -1,13 +1,5 @@
 # Openshift 4: Windows Containers
 
-## Table of Contents
-```
-Pre-requisites
-Demo #1 - To scale machines for OCP cluster 
-Demo #2 - To build simple Windows Web Server on OCP
-Resources for OCP and Windows Containers
-```
-
 ## Pre-requisites
 In order to do this demo, we assume that:
 ```
