@@ -29,7 +29,7 @@ spec:
         - $listener = New-Object System.Net.HttpListener; $listener.Prefixes.Add('http://*:80/'); $listener.Start();Write-Host('Listening at http://*:80/'); while ($listener.IsListening) { $context = $listener.GetContext(); $response = $context.Response; $content='<html><body><H1>Windows Container Web Server</H1><H2>Thanks for attending our live demo session!</H2></body></html>'; $buffer = [System.Text.Encoding]::UTF8.GetBytes($content); $response.ContentLength64 = $buffer.Length; $response.OutputStream.Write($buffer, 0, $buffer.Length); $response.Close(); };
       nodeSelector:
         beta.kubernetes.io/os: windows
-==
+---
 apiVersion: v1
 kind: Service
 metadata:
