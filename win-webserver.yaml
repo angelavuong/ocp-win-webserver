@@ -44,3 +44,23 @@ spec:
   selector:
     app: win-webserver
   type: LoadBalancer
+---
+kind: Route 
+apiVersion: route.openshift.io/v1
+metadata:
+  name: win-webserver
+  namespace: default
+  labels:
+    app: win-webserver
+    app.kubernetes.io/component: win-webserver
+    app.kubernetes.io/instance: win-webserver
+    app.kubernetes.io/part-of: win-webserver
+    app.openshift.io/runtime-version: latest
+spec:
+  to:
+    kind: Service
+    name: win-webserver
+    weight: 100
+  port:
+    targetPort: 80
+  wildcardPolicy: None
