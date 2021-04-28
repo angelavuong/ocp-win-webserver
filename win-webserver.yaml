@@ -1,5 +1,5 @@
-apiVersion: apps/v1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
   labels:
     app: win-webserver
@@ -30,8 +30,8 @@ spec:
       nodeSelector:
         beta.kubernetes.io/os: windows
 ---
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata:
   name: win-webserver
   labels:
